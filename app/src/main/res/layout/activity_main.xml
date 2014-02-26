@@ -1,5 +1,6 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -53,4 +54,32 @@
 
         </RadioGroup>
 
-</RelativeLayout>
+    <Button
+        android:background="@drawable/button_bg"
+        android:padding="10dp"
+        android:text="Cool Button"
+        android:textColor="@drawable/button_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:background="@drawable/button_bg"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Disabled Button"
+        android:enabled="false"
+        android:textColor="@drawable/button_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:background="@drawable/button_bg"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Really big button doesn't look that cool anymore..."
+        android:enabled="false"
+        android:textColor="@drawable/button_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
