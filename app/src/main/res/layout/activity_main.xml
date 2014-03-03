@@ -85,5 +85,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
+        <ImageView
+            android:background="@drawable/button_gradient_border_shadow"
+            android:layout_marginTop="10dp"
+            android:layout_width="200dp"
+            android:layout_height="50dp" />
+
+        <ImageView
+            android:background="@drawable/button_single_color_border"
+            android:layout_marginTop="10dp"
+            android:layout_width="150dp"
+            android:layout_height="30dp" />
+
     </LinearLayout>
 </ScrollView>
