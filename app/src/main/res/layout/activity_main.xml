@@ -23,37 +23,37 @@
                 android:id="@+id/available"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:button="@drawable/radiobutton_green"
+                android:button="@drawable/radiobutton_green_selector"
                 android:text="Available"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:button="@drawable/radiobutton_red"
+                android:button="@drawable/radiobutton_red_selector"
                 android:text="Busy"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:button="@drawable/radiobutton_yellow"
+                android:button="@drawable/radiobutton_yellow_selector"
                 android:text="Meeting"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:button="@drawable/radiobutton_orange"
+                android:button="@drawable/radiobutton_orange_selector"
                 android:text="Lunch"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:button="@drawable/radiobutton_blue"
+                android:button="@drawable/radiobutton_blue_selector"
                 android:text="Illness"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:button="@drawable/radiobutton_grey"
+                android:button="@drawable/radiobutton_grey_selector"
                 android:text="Left for the day"/>
 
             </RadioGroup>
