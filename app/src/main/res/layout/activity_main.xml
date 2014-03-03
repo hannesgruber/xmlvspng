@@ -23,65 +23,65 @@
                 android:id="@+id/available"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:button="@drawable/radiobutton_green"
+                android:button="@drawable/radiobutton_green_selector"
                 android:text="Available"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:button="@drawable/radiobutton_red"
+                android:button="@drawable/radiobutton_red_selector"
                 android:text="Busy"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:button="@drawable/radiobutton_yellow"
+                android:button="@drawable/radiobutton_yellow_selector"
                 android:text="Meeting"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:button="@drawable/radiobutton_orange"
+                android:button="@drawable/radiobutton_orange_selector"
                 android:text="Lunch"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:button="@drawable/radiobutton_blue"
+                android:button="@drawable/radiobutton_blue_selector"
                 android:text="Illness"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:button="@drawable/radiobutton_grey"
+                android:button="@drawable/radiobutton_grey_selector"
                 android:text="Left for the day"/>
 
             </RadioGroup>
 
         <Button
-            android:background="@drawable/button_bg_selector"
+            android:background="@drawable/button1_bg_selector"
             android:padding="10dp"
             android:text="Cool Button"
-            android:textColor="@drawable/button_text_color_selector"
+            android:textColor="@drawable/button1_text_color_selector"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <Button
-            android:background="@drawable/button_bg_selector"
+            android:background="@drawable/button1_bg_selector"
             android:layout_marginTop="10dp"
             android:padding="10dp"
             android:text="Disabled Button"
             android:enabled="false"
-            android:textColor="@drawable/button_text_color_selector"
+            android:textColor="@drawable/button1_text_color_selector"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <Button
-            android:background="@drawable/button_bg_selector"
+            android:background="@drawable/button1_bg_selector"
             android:layout_marginTop="10dp"
             android:padding="10dp"
             android:text="Really big button doesn't look that cool anymore..."
-            android:textColor="@drawable/button_text_color_selector"
+            android:textColor="@drawable/button1_text_color_selector"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
