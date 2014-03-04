@@ -1,0 +1,46 @@
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:constantSize="true"
+    android:variablePadding="false">
+
+    <item android:state_enabled="false" > <!-- disabled state-->
+        <layer-list>
+
+            <item android:drawable="@drawable/button3_bg"/>
+
+            // Bright overlay
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:bottomLeftRadius="20dp"
+                        android:bottomRightRadius="0dp"
+                        android:topLeftRadius="0dp"
+                        android:topRightRadius="20dp"/>
+                    <padding android:left="10dp" android:top="10dp"
+                        android:right="10dp" android:bottom="10dp"/>
+                    <solid android:color="#66ffffff"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_pressed="true" > <!-- pressed state-->
+        <layer-list>
+
+            <item android:drawable="@drawable/button3_bg"/>
+
+            // Dark overlay
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:bottomLeftRadius="20dp"
+                        android:bottomRightRadius="0dp"
+                        android:topLeftRadius="0dp"
+                        android:topRightRadius="20dp"/>
+                    <solid android:color="#33000000"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:drawable="@drawable/button3_bg"/> <!-- default state -->
+
+</selector>

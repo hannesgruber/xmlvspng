@@ -1,4 +1,15 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_checked="false" android:drawable="@drawable/status_empty" />
-    <item android:state_checked="true" android:drawable="@drawable/status_green" />
+    <item android:state_checked="false" >
+        <shape android:shape="oval" >
+            <size android:width="18dp" android:height="18dp"/>
+            <solid android:color="#ffffff"/>
+        </shape>
+    </item>
+    <item android:state_checked="true" >
+        <shape android:shape="oval" >
+            <size android:width="18dp" android:height="18dp"/>
+            <gradient android:startColor="#ff00e100" android:endColor="#ff008000" android:angle="-90"/>
+            <stroke android:width="2dp" android:color="#ffffff"/>
+        </shape>
+    </item>
 </selector>

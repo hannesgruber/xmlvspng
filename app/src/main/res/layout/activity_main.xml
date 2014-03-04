@@ -14,6 +14,12 @@
         android:paddingBottom="@dimen/activity_vertical_margin"
         tools:context="com.jayway.xmlvspng.app.MainActivity">
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="#000000"/>
+
         <RadioGroup
             android:checkedButton="@+id/available"
             android:layout_width="match_parent"
@@ -56,46 +62,89 @@
                 android:button="@drawable/radiobutton_grey_selector"
                 android:text="Left for the day"/>
 
-            </RadioGroup>
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="#000000"/>
 
         <Button
-            android:background="@drawable/button_bg_selector"
-            android:padding="10dp"
-            android:text="Cool Button"
-            android:textColor="@drawable/button_text_color_selector"
+            android:background="@drawable/button1_bg_selector"
+            android:text="Button 1"
+            android:textColor="@color/button1_text_color_selector"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <Button
-            android:background="@drawable/button_bg_selector"
+            android:background="@drawable/button1_bg_selector"
             android:layout_marginTop="10dp"
-            android:padding="10dp"
-            android:text="Disabled Button"
+            android:text="Button 1 disabled"
             android:enabled="false"
-            android:textColor="@drawable/button_text_color_selector"
+            android:textColor="@color/button1_text_color_selector"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <Button
-            android:background="@drawable/button_bg_selector"
+            android:background="@drawable/button1_bg_selector"
             android:layout_marginTop="10dp"
-            android:padding="10dp"
-            android:text="Really big button doesn't look that cool anymore..."
-            android:textColor="@drawable/button_text_color_selector"
+            android:text="Button 1 looks nice even though it is really big"
+            android:textColor="@color/button1_text_color_selector"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <ImageView
-            android:background="@drawable/button_gradient_border_shadow"
-            android:layout_marginTop="10dp"
-            android:layout_width="200dp"
-            android:layout_height="50dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="#000000"/>
 
-        <ImageView
-            android:background="@drawable/button_single_color_border"
+        <Button
+            android:background="@drawable/button2_bg_selector"
             android:layout_marginTop="10dp"
-            android:layout_width="150dp"
-            android:layout_height="30dp" />
+            android:text="Button 2"
+            android:textColor="@color/button2_text_color_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:background="@drawable/button2_bg_selector"
+            android:enabled="false"
+            android:text="Button 2 disabled"
+            android:textColor="@color/button2_text_color_selector"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="#000000"/>
+
+        <Button
+            android:background="@drawable/button3_bg_selector"
+            android:text="Button 3"
+            android:textColor="@color/button2_text_color_selector"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:background="@drawable/button3_bg_selector"
+            android:text="Button 3 disabled"
+            android:enabled="false"
+            android:textColor="@color/button2_text_color_selector"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="#000000"/>
 
     </LinearLayout>
 </ScrollView>

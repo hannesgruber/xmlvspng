@@ -1,0 +1,119 @@
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:constantSize="true"
+    android:variablePadding="false">
+
+    <item android:state_enabled="false" > <!-- disabled state-->
+        <layer-list>
+            // shadow
+            <item android:drawable="@drawable/shadow_rectangle"/>
+
+            // Border
+            <item
+                android:right="1.5dp"
+                android:bottom="1.5dp">
+                <shape android:shape="rectangle">
+                    <size android:height="30dp" android:width="50dp"/>
+                    <corners android:radius="3dp"/>
+                    <gradient
+                        android:type="linear"
+                        android:angle="-90"
+                        android:startColor="#ff648183"
+                        android:endColor="#ff105c5e" />
+                </shape>
+            </item>
+
+            <item
+                android:left="1.5dp"
+                android:top="1.5dp"
+                android:right="3dp"
+                android:bottom="3dp">
+                <shape android:shape="rectangle">
+                    <padding android:left="8.5dp" android:top="8.5dp"
+                        android:right="8.5dp" android:bottom="8.5dp"/>
+                    <corners android:radius="2.5dp"/>
+                    <gradient
+                        android:type="linear"
+                        android:angle="-90"
+                        android:startColor="#EEEEEE"
+                        android:endColor="#99AABB" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_pressed="true" > <!-- pressed state-->
+        <layer-list>
+            // shadow
+            <item android:drawable="@drawable/shadow_rectangle"/>
+
+            // Border
+            <item
+                android:right="1.5dp"
+                android:bottom="1.5dp">
+                <shape android:shape="rectangle">
+                    <size android:height="30dp" android:width="50dp"/>
+                    <corners android:radius="3dp"/>
+                    <gradient
+                        android:type="linear"
+                        android:angle="-90"
+                        android:startColor="#ff097274"
+                        android:endColor="#ff072123" />
+                </shape>
+            </item>
+
+            <item
+                android:left="1.5dp"
+                android:top="1.5dp"
+                android:right="3dp"
+                android:bottom="3dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="2.5dp"/>
+                    <gradient
+                        android:type="linear"
+                        android:angle="-90"
+                        android:startColor="#ff098a8c"
+                        android:endColor="#ff093335" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <item> <!-- default state -->
+        <layer-list>
+            // shadow
+            <item android:drawable="@drawable/shadow_rectangle"/>
+
+            // Border
+            <item
+                android:right="1.5dp"
+                android:bottom="1.5dp">
+                <shape android:shape="rectangle">
+                    <size android:height="30dp" android:width="50dp"/>
+                    <corners android:radius="3dp"/>
+                    <gradient
+                        android:type="linear"
+                        android:angle="-90"
+                        android:startColor="#ff097274"
+                        android:endColor="#ff072123" />
+                </shape>
+            </item>
+
+            <item
+                android:left="1.5dp"
+                android:top="1.5dp"
+                android:right="3dp"
+                android:bottom="3dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="2.5dp"/>
+                    <gradient
+                        android:type="linear"
+                        android:angle="-90"
+                        android:startColor="#ff09d9db"
+                        android:endColor="#ff09494b" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>
