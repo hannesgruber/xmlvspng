@@ -1,6 +1,8 @@
 package com.jayway.xmlvspng.app;
 
 import android.content.Context;
+import android.content.res.ColorStateList;
+import android.content.res.Resources;
 import android.graphics.Canvas;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -20,6 +22,9 @@ import android.widget.TextView;
 
 public class ListActivity extends ActionBarActivity {
 
+    ColorStateList button1TextColor;
+    ColorStateList button2TextColor;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +38,9 @@ public class ListActivity extends ActionBarActivity {
         }
 
         list.setAdapter(new MyAdapter(this, values));
+
+        button1TextColor = getResources().getColorStateList(R.color.button1_text_color_selector);
+        button2TextColor = getResources().getColorStateList(R.color.button2_text_color_selector);
     }
 
     static class ViewHolder{
@@ -75,10 +83,13 @@ public class ListActivity extends ActionBarActivity {
             double rand = Math.random();
             if(rand < 0.33){
                 viewHolder.button.setBackgroundResource(R.drawable.button1_bg_selector);
+                viewHolder.button.setTextColor(button1TextColor);
             } else if(rand < 0.66){
                 viewHolder.button.setBackgroundResource(R.drawable.button2_bg_selector);
+                viewHolder.button.setTextColor(button2TextColor);
             } else {
                 viewHolder.button.setBackgroundResource(R.drawable.button3_bg_selector);
+                viewHolder.button.setTextColor(button2TextColor);
             }
 
             viewHolder.button.setEnabled(Math.random() > 0.5);
