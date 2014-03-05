@@ -35,6 +35,11 @@ public class ListActivity extends ActionBarActivity {
         list.setAdapter(new MyAdapter(this, values));
     }
 
+    static class ViewHolder{
+        TextView textView;
+        Button button;
+        RadioButton radioButton;
+    }
 
     private class MyAdapter extends ArrayAdapter<String> {
 
@@ -52,48 +57,50 @@ public class ListActivity extends ActionBarActivity {
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
 
+            ViewHolder viewHolder;
+
             if(convertView == null){
                 convertView = inflater.inflate(R.layout.list_item, parent, false);
+                viewHolder = new ViewHolder();
+                viewHolder.textView = (TextView)convertView.findViewById(R.id.text);
+                viewHolder.button = (Button)convertView.findViewById(R.id.button);
+                viewHolder.radioButton = (RadioButton)convertView.findViewById(R.id.radioButton);
+                convertView.setTag(viewHolder);
+            } else {
+                viewHolder = (ViewHolder)convertView.getTag();
             }
 
-            TextView text = (TextView)convertView.findViewById(R.id.text);
-            Button button = (Button)convertView.findViewById(R.id.button);
-            RadioButton radioButton = (RadioButton)convertView.findViewById(R.id.radioButton);
-
-            text.setText(values[position]);
+            viewHolder.textView.setText(values[position]);
 
             // When you have some more buttons you can put them to use here
             double rand = Math.random();
             if(rand < 0.33){
-                button.setBackgroundResource(R.drawable.button1_bg_selector);
+                viewHolder.button.setBackgroundResource(R.drawable.button1_bg_selector);
             } else if(rand < 0.66){
-                button.setBackgroundResource(R.drawable.button1_bg_selector);
+                viewHolder.button.setBackgroundResource(R.drawable.button1_bg_selector);
             } else {
-                button.setBackgroundResource(R.drawable.button1_bg_selector);
+                viewHolder.button.setBackgroundResource(R.drawable.button1_bg_selector);
             }
 
-            button.setEnabled(Math.random() > 0.5);
+            viewHolder.button.setEnabled(Math.random() > 0.5);
 
             rand = Math.random();
             if(rand < 0.15){
-                radioButton.setButtonDrawable(R.drawable.radiobutton_blue_selector);
+                viewHolder.radioButton.setButtonDrawable(R.drawable.radiobutton_blue_selector);
             } else if(rand < 0.3){
-                radioButton.setButtonDrawable(R.drawable.radiobutton_green_selector);
+                viewHolder.radioButton.setButtonDrawable(R.drawable.radiobutton_green_selector);
             } else if(rand < 0.45){
-                radioButton.setButtonDrawable(R.drawable.radiobutton_grey_selector);
+                viewHolder.radioButton.setButtonDrawable(R.drawable.radiobutton_grey_selector);
             } else if(rand < 0.6){
-                radioButton.setButtonDrawable(R.drawable.radiobutton_orange_selector);
+                viewHolder.radioButton.setButtonDrawable(R.drawable.radiobutton_orange_selector);
             } else if(rand < 0.75){
-                radioButton.setButtonDrawable(R.drawable.radiobutton_red_selector);
+                viewHolder.radioButton.setButtonDrawable(R.drawable.radiobutton_red_selector);
             } else {
-                radioButton.setButtonDrawable(R.drawable.radiobutton_yellow_selector);
+                viewHolder.radioButton.setButtonDrawable(R.drawable.radiobutton_yellow_selector);
             }
 
             return convertView;
         }
     }
-
-
-
 
 }
