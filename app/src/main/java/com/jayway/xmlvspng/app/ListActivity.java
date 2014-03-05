@@ -72,6 +72,8 @@ public class ListActivity extends ActionBarActivity {
                 button.setBackgroundResource(R.drawable.button3_bg_selector);
             }
 
+            button.setEnabled(Math.random() > 0.5);
+
             rand = Math.random();
             if(rand < 0.15){
                 radioButton.setButtonDrawable(R.drawable.radiobutton_blue_selector);
